@@ -1,0 +1,1216 @@
+fileFormatVersion: 2
+guid: 47c4c6ff35754dc4c89c9611078c72e5
+timeCreated: 1530978989
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Armature
+    100002: body
+    100004: DEF.eyeLid.B
+    100006: DEF.eyeLid.B_end
+    100008: DEF.eyeLid.U
+    100010: DEF.eyeLid.U_end
+    100012: Eye
+    100014: //RootNode
+    100016: Eye Target
+    100018: Eye Target_end
+    100020: eye_rotation
+    100022: Plane
+    100024: Plane.001
+    100026: root
+    100028: spine_01
+    100030: spine_01_end
+    100032: spine_02
+    100034: spine_03
+    100036: spine_04
+    100038: spine_05
+    100040: spine_05_end
+    100042: spine_IK
+    100044: spine_IK_end
+    400000: Armature
+    400002: body
+    400004: DEF.eyeLid.B
+    400006: DEF.eyeLid.B_end
+    400008: DEF.eyeLid.U
+    400010: DEF.eyeLid.U_end
+    400012: Eye
+    400014: //RootNode
+    400016: Eye Target
+    400018: Eye Target_end
+    400020: eye_rotation
+    400022: Plane
+    400024: Plane.001
+    400026: root
+    400028: spine_01
+    400030: spine_01_end
+    400032: spine_02
+    400034: spine_03
+    400036: spine_04
+    400038: spine_05
+    400040: spine_05_end
+    400042: spine_IK
+    400044: spine_IK_end
+    2300000: Plane
+    3300000: Plane
+    4300000: Plane
+    4300002: Plane.001
+    7400000: Armature|attack_1
+    7400002: Armature|attack_2
+    7400004: Armature|attack_3
+    7400006: Armature|death (batlle)
+    7400008: Armature|defence
+    7400010: Armature|defence_end
+    7400012: Armature|defence_start
+    7400014: Armature|hit_1
+    7400016: Armature|hit_2
+    7400018: Armature|idel
+    7400020: Armature|idel_battle
+    7400022: Armature|run
+    7400024: Armature|run_end
+    7400026: Armature|run_start
+    7400028: Armature|walk
+    9500000: //RootNode
+    13700000: Plane.001
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|attack_1
+      takeName: Armature|attack_1
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/body
+        weight: 1
+      - path: Armature/root/body/Eye Target
+        weight: 1
+      - path: Armature/root/body/Eye Target/Eye Target_end
+        weight: 1
+      - path: Armature/root/body/spine_02
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B/DEF.eyeLid.B_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U/DEF.eyeLid.U_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/Plane
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01/spine_01_end
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05/spine_05_end
+        weight: 1
+      - path: Armature/root/body/spine_IK
+        weight: 1
+      - path: Armature/root/body/spine_IK/spine_IK_end
+        weight: 1
+      - path: Plane.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|attack_2
+      takeName: Armature|attack_2
+      firstFrame: 0
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/body
+        weight: 1
+      - path: Armature/root/body/Eye Target
+        weight: 1
+      - path: Armature/root/body/Eye Target/Eye Target_end
+        weight: 1
+      - path: Armature/root/body/spine_02
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B/DEF.eyeLid.B_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U/DEF.eyeLid.U_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/Plane
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01/spine_01_end
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05/spine_05_end
+        weight: 1
+      - path: Armature/root/body/spine_IK
+        weight: 1
+      - path: Armature/root/body/spine_IK/spine_IK_end
+        weight: 1
+      - path: Plane.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|attack_3
+      takeName: Armature|attack_3
+      firstFrame: 0
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/body
+        weight: 1
+      - path: Armature/root/body/Eye Target
+        weight: 1
+      - path: Armature/root/body/Eye Target/Eye Target_end
+        weight: 1
+      - path: Armature/root/body/spine_02
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B/DEF.eyeLid.B_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U/DEF.eyeLid.U_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/Plane
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01/spine_01_end
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05/spine_05_end
+        weight: 1
+      - path: Armature/root/body/spine_IK
+        weight: 1
+      - path: Armature/root/body/spine_IK/spine_IK_end
+        weight: 1
+      - path: Plane.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|death (batlle)
+      takeName: Armature|death (batlle)
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/body
+        weight: 1
+      - path: Armature/root/body/Eye Target
+        weight: 1
+      - path: Armature/root/body/Eye Target/Eye Target_end
+        weight: 1
+      - path: Armature/root/body/spine_02
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B/DEF.eyeLid.B_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U/DEF.eyeLid.U_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/Plane
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01/spine_01_end
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05/spine_05_end
+        weight: 1
+      - path: Armature/root/body/spine_IK
+        weight: 1
+      - path: Armature/root/body/spine_IK/spine_IK_end
+        weight: 1
+      - path: Plane.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|defence
+      takeName: Armature|defence
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/body
+        weight: 1
+      - path: Armature/root/body/Eye Target
+        weight: 1
+      - path: Armature/root/body/Eye Target/Eye Target_end
+        weight: 1
+      - path: Armature/root/body/spine_02
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B/DEF.eyeLid.B_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U/DEF.eyeLid.U_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/Plane
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01/spine_01_end
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05/spine_05_end
+        weight: 1
+      - path: Armature/root/body/spine_IK
+        weight: 1
+      - path: Armature/root/body/spine_IK/spine_IK_end
+        weight: 1
+      - path: Plane.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|defence_end
+      takeName: Armature|defence_end
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/body
+        weight: 1
+      - path: Armature/root/body/Eye Target
+        weight: 1
+      - path: Armature/root/body/Eye Target/Eye Target_end
+        weight: 1
+      - path: Armature/root/body/spine_02
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B/DEF.eyeLid.B_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U/DEF.eyeLid.U_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/Plane
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01/spine_01_end
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05/spine_05_end
+        weight: 1
+      - path: Armature/root/body/spine_IK
+        weight: 1
+      - path: Armature/root/body/spine_IK/spine_IK_end
+        weight: 1
+      - path: Plane.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|defence_start
+      takeName: Armature|defence_start
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/body
+        weight: 1
+      - path: Armature/root/body/Eye Target
+        weight: 1
+      - path: Armature/root/body/Eye Target/Eye Target_end
+        weight: 1
+      - path: Armature/root/body/spine_02
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B/DEF.eyeLid.B_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U/DEF.eyeLid.U_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/Plane
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01/spine_01_end
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05/spine_05_end
+        weight: 1
+      - path: Armature/root/body/spine_IK
+        weight: 1
+      - path: Armature/root/body/spine_IK/spine_IK_end
+        weight: 1
+      - path: Plane.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|hit_1
+      takeName: Armature|hit_1
+      firstFrame: 0
+      lastFrame: 18
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/body
+        weight: 1
+      - path: Armature/root/body/Eye Target
+        weight: 1
+      - path: Armature/root/body/Eye Target/Eye Target_end
+        weight: 1
+      - path: Armature/root/body/spine_02
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B/DEF.eyeLid.B_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U/DEF.eyeLid.U_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/Plane
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01/spine_01_end
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05/spine_05_end
+        weight: 1
+      - path: Armature/root/body/spine_IK
+        weight: 1
+      - path: Armature/root/body/spine_IK/spine_IK_end
+        weight: 1
+      - path: Plane.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|hit_2
+      takeName: Armature|hit_2
+      firstFrame: 0
+      lastFrame: 18
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/body
+        weight: 1
+      - path: Armature/root/body/Eye Target
+        weight: 1
+      - path: Armature/root/body/Eye Target/Eye Target_end
+        weight: 1
+      - path: Armature/root/body/spine_02
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B/DEF.eyeLid.B_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U/DEF.eyeLid.U_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/Plane
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01/spine_01_end
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05/spine_05_end
+        weight: 1
+      - path: Armature/root/body/spine_IK
+        weight: 1
+      - path: Armature/root/body/spine_IK/spine_IK_end
+        weight: 1
+      - path: Plane.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|idel
+      takeName: Armature|idel
+      firstFrame: 0
+      lastFrame: 148
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/body
+        weight: 1
+      - path: Armature/root/body/Eye Target
+        weight: 1
+      - path: Armature/root/body/Eye Target/Eye Target_end
+        weight: 1
+      - path: Armature/root/body/spine_02
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B/DEF.eyeLid.B_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U/DEF.eyeLid.U_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/Plane
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01/spine_01_end
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05/spine_05_end
+        weight: 1
+      - path: Armature/root/body/spine_IK
+        weight: 1
+      - path: Armature/root/body/spine_IK/spine_IK_end
+        weight: 1
+      - path: Plane.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|idel_battle
+      takeName: Armature|idel_battle
+      firstFrame: 0
+      lastFrame: 158
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/body
+        weight: 1
+      - path: Armature/root/body/Eye Target
+        weight: 1
+      - path: Armature/root/body/Eye Target/Eye Target_end
+        weight: 1
+      - path: Armature/root/body/spine_02
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B/DEF.eyeLid.B_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U/DEF.eyeLid.U_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/Plane
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01/spine_01_end
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05/spine_05_end
+        weight: 1
+      - path: Armature/root/body/spine_IK
+        weight: 1
+      - path: Armature/root/body/spine_IK/spine_IK_end
+        weight: 1
+      - path: Plane.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|run
+      takeName: Armature|run
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/body
+        weight: 1
+      - path: Armature/root/body/Eye Target
+        weight: 1
+      - path: Armature/root/body/Eye Target/Eye Target_end
+        weight: 1
+      - path: Armature/root/body/spine_02
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B/DEF.eyeLid.B_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U/DEF.eyeLid.U_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/Plane
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01/spine_01_end
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05/spine_05_end
+        weight: 1
+      - path: Armature/root/body/spine_IK
+        weight: 1
+      - path: Armature/root/body/spine_IK/spine_IK_end
+        weight: 1
+      - path: Plane.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|run_end
+      takeName: Armature|run_end
+      firstFrame: 0
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/body
+        weight: 1
+      - path: Armature/root/body/Eye Target
+        weight: 1
+      - path: Armature/root/body/Eye Target/Eye Target_end
+        weight: 1
+      - path: Armature/root/body/spine_02
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B/DEF.eyeLid.B_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U/DEF.eyeLid.U_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/Plane
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01/spine_01_end
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05/spine_05_end
+        weight: 1
+      - path: Armature/root/body/spine_IK
+        weight: 1
+      - path: Armature/root/body/spine_IK/spine_IK_end
+        weight: 1
+      - path: Plane.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|run_start
+      takeName: Armature|run_start
+      firstFrame: 0
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/body
+        weight: 1
+      - path: Armature/root/body/Eye Target
+        weight: 1
+      - path: Armature/root/body/Eye Target/Eye Target_end
+        weight: 1
+      - path: Armature/root/body/spine_02
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B/DEF.eyeLid.B_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U/DEF.eyeLid.U_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/Plane
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01/spine_01_end
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05/spine_05_end
+        weight: 1
+      - path: Armature/root/body/spine_IK
+        weight: 1
+      - path: Armature/root/body/spine_IK/spine_IK_end
+        weight: 1
+      - path: Plane.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|walk
+      takeName: Armature|walk
+      firstFrame: 0
+      lastFrame: 99
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/body
+        weight: 1
+      - path: Armature/root/body/Eye Target
+        weight: 1
+      - path: Armature/root/body/Eye Target/Eye Target_end
+        weight: 1
+      - path: Armature/root/body/spine_02
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.B/DEF.eyeLid.B_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/DEF.eyeLid.U/DEF.eyeLid.U_end
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/Plane
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01
+        weight: 1
+      - path: Armature/root/body/spine_02/eye_rotation/Eye/spine_01/spine_01_end
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05
+        weight: 1
+      - path: Armature/root/body/spine_02/spine_03/spine_04/spine_05/spine_05_end
+        weight: 1
+      - path: Armature/root/body/spine_IK
+        weight: 1
+      - path: Armature/root/body/spine_IK/spine_IK_end
+        weight: 1
+      - path: Plane.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
