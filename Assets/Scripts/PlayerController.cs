@@ -228,6 +228,24 @@ public class PlayerController : MonoBehaviour
 
 	void FixedUpdate ()
     {
+        Text txt = GameObject.Find("HP").GetComponent<Text>();
+
+        txt.text = "HP :" + m_playerHealth.ToString();
+
+        GameObject[] targets = GameObject.FindGameObjectsWithTag("Player");
+
+        foreach (GameObject target in targets)
+        {
+            PlayerController targetPC = target.transform.GetComponent<PlayerController>();
+            GameObject targethandle = target.transform.GetChild(5).GetChild(1).GetChild(0).GetChild(0).gameObject;
+            targethandle.GetComponent<RectTransform>().offsetMin = new Vector2((100 - targetPC.m_playerHealth) / 100 * 160, 0);
+        }
+
+        Text txtCapacity = GameObject.Find("Capacity").GetComponent<Text>();
+
+        txtCapacity.text = "Capacity : " + Mathf.Floor(m_gunNumber).ToString() +
+            " / " + Mathf.Floor(m_gunCapacity).ToString();
+
         m_animator.SetBool("Grounded", m_isGrounded);
 
 
