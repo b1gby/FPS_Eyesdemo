@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class GameManager : MonoBehaviour
@@ -14,13 +15,21 @@ public class GameManager : MonoBehaviour
     public Button btnResume;
     public Button btnExit;
     public bool is_clickEscMenu = false;
-    
-    
+
+    public int EyeNum;
+    public Text Wintxt;
+    public Text Losetxt;
+
+    private int TotalTime = 180;
+    public Text timerTxt;
     // Start is called before the first frame update
     void Start()
     {
         Screen.fullScreen = true;
         Time.timeScale = 0;
+
+
+        StartCoroutine(CountDown());
     }
 
     public void ReadyToPlay()
@@ -61,7 +70,27 @@ public class GameManager : MonoBehaviour
                 is_clickEscMenu = true;
             }
         }
-        
+
+        EyeNum = GameObject.FindGameObjectsWithTag("Eye").GetLength(0);
+        if(EyeNum == 0)
+        {
+            Wintxt.gameObject.SetActive(true);
+            if(Input.GetMouseButtonDown(0))
+            {
+                SceneManager.LoadScene("SampleScene");
+                Wintxt.gameObject.SetActive(false);
+            }
+        }
+
+        if(TotalTime<=0)
+        {
+            Losetxt.gameObject.SetActive(true);
+            if (Input.GetMouseButtonDown(0))
+            {
+                SceneManager.LoadScene("SampleScene");
+                Losetxt.gameObject.SetActive(false);
+            }
+        }
     }
 
     public void ClickExitButton()
@@ -74,5 +103,25 @@ public class GameManager : MonoBehaviour
         escCount++;
     }
 
+    /// <summary>
+    /// 更新时间
+    /// </summary>
+    /// <param name="time"></param>
+    public void UpdateTimer(int time)
+    {
+        int minute = time / 60;
+        int second = time % 60;
 
+        timerTxt.text = minute.ToString().PadLeft(2, '0') + " : " + second.ToString().PadLeft(2, '0');
+    }
+
+    IEnumerator CountDown()
+    {
+        while (TotalTime >= 0)
+        {
+            UpdateTimer(TotalTime);
+            yield return new WaitForSeconds(1);
+            TotalTime--;
+        }
+    }
 }

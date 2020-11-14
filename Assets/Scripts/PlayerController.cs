@@ -34,7 +34,6 @@ public class PlayerController : MonoBehaviour
     private float m_shootRange = 100f;
     public float m_playerHealth = 100f;
     public bool is_playerDead = false;
-    private bool m_amIShoot = false;
     private bool m_amIShootHead = false;
     public bool m_isShooted = false;
     public bool m_isShootedHead = false;
@@ -57,36 +56,22 @@ public class PlayerController : MonoBehaviour
 
     public int B_flag = 1;
 
-    private float m_gunCapacity = 30f;
-    private float m_gunNumber = 30f;
+    private float m_gunCapacity = 1f;
+    private float m_gunNumber = 1f;
     public bool is_OnLoading = false;
-    private float m_timerOnLoading = 3f;
+    private float m_timerOnLoading = 5f;
     private bool hasBeenPressR = false;
 
     private float m_timerRevive = 5f;
 
     public Text m_nameText;
     public GameObject m_playerHealthBarHandle;
-
-    private string whoKillMe;
-    private string iKillWho;
-    private bool is_iKillSomeone = false;
-    private bool is_someoneKillMe = false;
-    private float m_timerKillSomeone = 3f;
+    
 
     private GameObject m_gameManager;
-
-
-    public GameObject chatContentPrefab;
-    private Transform gridLayout;
-    public GameObject chatAreaPrefab;
-    public GameObject chatInputField;
-    private bool is_pressT = false;
-    private bool is_hasChatArea = false;
-    private string msg;
     
-    private string AppID;
-    private string AppVersion;
+
+    public Animator GunAnim;
 
     void Awake()
     {
@@ -198,30 +183,30 @@ public class PlayerController : MonoBehaviour
                 txtOnLoading.text = "";
                 is_OnLoading = false;
                 hasBeenPressR = false;
-                this.m_gunNumber = 30f;
+                this.m_gunNumber = 1f;
             }
         }
 
-        //死亡复活
-        if (is_playerDead)
-        {
-            m_timerRevive -= Time.fixedDeltaTime;
-            Text txxt = GameObject.Find("DeadTip").GetComponent<Text>();
-            txxt.text = "You are Dead! Reviving ... ";
+        ////死亡复活
+        //if (is_playerDead)
+        //{
+        //    m_timerRevive -= Time.fixedDeltaTime;
+        //    Text txxt = GameObject.Find("DeadTip").GetComponent<Text>();
+        //    txxt.text = "You are Dead! Reviving ... ";
 
-            Quaternion tmpQ = this.transform.rotation;
-            this.transform.rotation = Quaternion.Euler(-90, tmpQ.eulerAngles.y, tmpQ.eulerAngles.z);
-            //Debug.Log(whoKillMe);
+        //    Quaternion tmpQ = this.transform.rotation;
+        //    this.transform.rotation = Quaternion.Euler(-90, tmpQ.eulerAngles.y, tmpQ.eulerAngles.z);
+        //    //Debug.Log(whoKillMe);
 
-            if (m_timerRevive <= 0)
-            {
-                txxt.text = "";
-                this.m_playerHealth = 100f;
-                this.transform.position = new Vector3(0, 3, -10);
-                this.transform.rotation = Quaternion.identity;
-                is_playerDead = false;
-            }
-        }
+        //    if (m_timerRevive <= 0)
+        //    {
+        //        txxt.text = "";
+        //        this.m_playerHealth = 100f;
+        //        this.transform.position = new Vector3(0, 3, -10);
+        //        this.transform.rotation = Quaternion.identity;
+        //        is_playerDead = false;
+        //    }
+        //}
     }
     
 
@@ -240,11 +225,7 @@ public class PlayerController : MonoBehaviour
             GameObject targethandle = target.transform.GetChild(5).GetChild(1).GetChild(0).GetChild(0).gameObject;
             targethandle.GetComponent<RectTransform>().offsetMin = new Vector2((100 - targetPC.m_playerHealth) / 100 * 160, 0);
         }
-
-        Text txtCapacity = GameObject.Find("Capacity").GetComponent<Text>();
-
-        txtCapacity.text = "Capacity : " + Mathf.Floor(m_gunNumber).ToString() +
-            " / " + Mathf.Floor(m_gunCapacity).ToString();
+        
 
         m_animator.SetBool("Grounded", m_isGrounded);
 
@@ -301,6 +282,7 @@ public class PlayerController : MonoBehaviour
             nextTimeToFire = Time.time + 1f / m_shootRate;
             m_gunNumber--;
             Shoot();
+            GunAnim.SetTrigger("shoot");
             //m_gunFlash.Play();
         }
         
@@ -311,7 +293,7 @@ public class PlayerController : MonoBehaviour
             is_OnLoading = true;
             if(!hasBeenPressR)
             {
-                m_timerOnLoading = 3f;
+                m_timerOnLoading = 5f;
                 hasBeenPressR = true;
             }
         }
@@ -348,54 +330,28 @@ public class PlayerController : MonoBehaviour
 
         RaycastHit hit;
         Transform camera = Camera.main.transform;
-        if(Physics.Raycast(camera.position, camera.forward, out hit, m_shootRange))
+        if(Physics.Raycast(camera.position, camera.forward, out hit, m_shootRange,1<<LayerMask.NameToLayer("Eye")))
         {
-            targetTransform = hit.transform;
-            targetPC = targetTransform.GetComponent<PlayerController>();
-            
-            if (hit.collider.name=="Head")
+            if(hit.collider.name == "EyeForward")
             {
-                targetPC.takeDamage(m_shootDamage,true);
-                m_amIShoot = true;
-                m_amIShootHead = true;
-                m_timerAmIShootHead = 0.2f;
+                targetTransform = hit.transform;
+                Debug.Log(targetTransform.root);
+                targetTransform.root.GetComponent<Health>().takeDamage(20f);
+                //targetPC.takeDamage(m_shootDamage * 2);
+                //m_amIShootHead = true;
+                //m_timerAmIShootHead = 0.2f;
             }
-            else if (targetPC != null)
-            {
-                targetPC.takeDamage(m_shootDamage,false);
-                m_amIShoot = true;
-            }
-            
-            if(targetPC!=null && targetPC.m_playerHealth <= 0)
-            {
-                iKillWho = targetPC.transform.name;
-                is_iKillSomeone = true;
-                m_timerKillSomeone = 3f;
-            }
-
-            //Instantiate(m_hitImpact, hit.point, Quaternion.LookRotation(hit.normal));
-            //GameObject[] to_destory = GameObject.FindGameObjectsWithTag("Smoke");
-            //foreach(GameObject to_des in to_destory)
-            //{
-            //    Destroy(to_des, 5);
-            //}
+                
             
         }
     }
 
 
-    public void takeDamage(float amount,bool isHead)
+    public void takeDamage(float amount)
     {
         if(m_playerHealth > 0f)
         {
-            if(isHead)
-            {
-                m_playerHealth -= 2*amount;
-            }
-            else
-            {
-                m_playerHealth -= amount;
-            }
+            m_playerHealth -= amount;
 
             if(m_playerHealth <0)
             {
