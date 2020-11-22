@@ -9,12 +9,12 @@ public class EnemyBloodUI : MonoBehaviour
 
     public Text[] EyeHealthTxt;
 
-    public Health[] EyeHealth;
+    public GameObject[] EyeHealth;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        EyeHealth = GameObject.FindGameObjectsWithTag("Eye");
     }
 
     // Update is called once per frame
@@ -22,13 +22,17 @@ public class EnemyBloodUI : MonoBehaviour
     {
         for(int i =0;i<4;i++)
         {
-            Health h;
-            if(EyeHealth[i].TryGetComponent<Health>(out h))
+            if(EyeHealth[i]!=null)
             {
-                float h_num = h.health;
-                EyeHealthSlider[i].value = h_num;
-                EyeHealthTxt[i].text = h_num.ToString();
+                Health h;
+                if (EyeHealth[i].TryGetComponent<Health>(out h))
+                {
+                    float h_num = h.health;
+                    EyeHealthSlider[i].value = h_num;
+                    EyeHealthTxt[i].text = h_num.ToString();
+                }
             }
+            
         }
     }
 }

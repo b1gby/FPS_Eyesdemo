@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     public Text Wintxt;
     public Text Losetxt;
 
-    private int TotalTime = 180;
+    private int TotalTime = 300;
     public Text timerTxt;
     // Start is called before the first frame update
     void Start()

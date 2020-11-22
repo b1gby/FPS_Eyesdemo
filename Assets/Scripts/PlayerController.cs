@@ -73,6 +73,8 @@ public class PlayerController : MonoBehaviour
 
     public Animator GunAnim;
 
+    public bool isUnderWater = false;
+
     void Awake()
     {
         if(!m_animator) { m_animator = gameObject.GetComponent<Animator>(); }
@@ -314,12 +316,7 @@ public class PlayerController : MonoBehaviour
                 this.m_shootRate = 2f;
             }
         }
-
-        if (m_playerHealth<=0 || this.transform.position.y<-10f)
-        {
-            is_playerDead = true;
-            m_timerRevive = 5.0f;
-        }
+        
 
         m_wasGrounded = m_isGrounded;
          
@@ -365,7 +362,11 @@ public class PlayerController : MonoBehaviour
     {
         bool jumpCooldownOver = (Time.time - m_jumpTimeStamp) >= m_minJumpInterval;
 
-        if (jumpCooldownOver && m_isGrounded && Input.GetKey(KeyCode.Space))
+        if(isUnderWater == true && Input.GetKey(KeyCode.Space))
+        {
+            m_rigidBody.velocity = new Vector3(m_rigidBody.velocity.x, 5, m_rigidBody.velocity.z);
+        }
+        else if(jumpCooldownOver && m_isGrounded && Input.GetKey(KeyCode.Space))
         {
             m_jumpTimeStamp = Time.time;
             m_rigidBody.AddForce(Vector3.up * m_jumpForce, ForceMode.Impulse);
